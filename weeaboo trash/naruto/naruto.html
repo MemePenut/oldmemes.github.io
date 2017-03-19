@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image" href="img/ang.png">
+		<link rel="stylesheet" type="text/css" href="narutostyle.css" >
+		<title>Meme Central</title>
+	</head>
+	
+	<body onload="setVolume()">
+		<div class="header">
+					<div class="dropdown">
+						<img class="dropbtn" id="dropbutton" onclick="clicked()" src="img/menubutton.png" width="80" height="80" ></img>
+							<div id="myDropdown"class="menu">
+								<ul> 
+									<li><a href="../../dank memes/memes.html">main memes</a>
+									<li><a href="../../nbreakfast/reeses puffs.html">reeses puff</a>
+									<li><a href="../choice.html">weeaboo trash</a>	
+									<li><a href="../../minecraft/minecraft.html">minecraft</a>	
+									<li><a href="../../sonic/sanic.html">sanic</a> 
+									<li><a href="../../russia/cyka blyat.html">cyka blyat</a>
+								</ul>
+							</div> <!--close menu-->
+					</div>
+				<img src="img/ang.png"  id="aang" onclick="mute()">
+				<a href="../../index.html"  ><h1>meme central</h1></a>
+				<h2>my favourite character in naruto shippuden is goku</h2>
+		</div>
+				<div class="container">
+		
+		<audio preload="auto" autoplay loop id="weebaudio"> 
+			<source src="sounds/music/kana-boon - silhouette.mp3" type="audio/mp3">
+		</audio>
+			
+			<div class="body">
+	<img id='honkimg' class='image' onclick="honk();" src="img/autistic naruto.png" />
+				<h3>naruto's dad is the hokage</h3>
+			</div> <!--close body-->
+		</div> <!--close container-->
+						<div class="footer">
+							<p>created by penut
+						</div> <!--close footer-->
+	</body>
+</html>
+
+<script>
+function clicked() {
+	document.getElementById("myDropdown").classList.toggle("show");
+	document.getElementById("dropbutton").classList.toggle("active");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+		document.getElementById("dropbutton").classList.toggle("active");
+      }
+    }
+  }
+}
+var x = document.getElementById('weebaudio');
+
+function setVolume() {
+x.volume = 0.2;
+}
+
+function mute() {
+    if (x.volume == 0.0) {
+        x.volume = 0.2;
+		document.getElementById("nutt").classList.toggle("active");
+    } else {
+        x.volume = 0.0;
+		document.getElementById("nutt").classList.toggle("active");
+    }
+}
+
+
+var y = 0;
+var imagesArray = ["img/autistic naruto.png","img/narutodotjaypeg.png","img/naruto what.png","img/high quality fight scene.png","img/creepysakura2.png","img/creepysakura.png","img/creepyshika.png","img/creepynaruto.png","img/inhale.png","img/AAAAAAAAAAAAAAAA.png","img/bout to gibe da blo.png","img/sasuke 1.png","img/sasuke.png","img/sasuke2.png","img/sasukepunch.png","img/sasukepunch2.png","img/sasusight.png","img/pein.png","img/pein1.png","img/pein2.png","img/pein3.png","img/pein4.png","img/pein5.png","img/pein6.png","img/pein7.png","img/peingif.gif","img/peingif1.gif","img/maito gai.png","img/maito gai 2.png"];
+
+function honk() {
+    if (y < imagesArray.length - 1) {
+        y++;
+    }
+    else {
+        y = 0;
+    }
+
+    document.getElementById("honkimg").setAttribute("src", "");
+    document.getElementById("honkimg").setAttribute("src", imagesArray[y]);
+}
+</script>
+
+

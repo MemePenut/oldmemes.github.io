@@ -1,0 +1,109 @@
+@font-face{
+	font-family: "naruto font"; 
+	src: url('assets/njnaruto.ttf') format("truetype");
+}
+@font-face{
+	font-family: "anime font"; 
+	src: url('assets/animeace.ttf') format("truetype");
+}
+html {
+	font-family: "anime font", sans-serif;
+	font-size: 16px;
+	background: url('img/kimi no na wa.png'); 
+	background-size: stretch;
+	background-position: 50% 20%;
+	width: 900px;
+	max-width: 1000px;
+	min-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative; 
+}
+h1{
+	text-align: center;
+	font-size: 36px;
+}	
+h2{
+margin-top: 10%;
+font-size: 24px;
+}
+a {
+	color: rgba(255,225,225,1);
+}
+li{
+	list-style-type: none;
+	text-align: center;
+	border: 2px solid rgba(255,255,255,0.9);
+	border-radius: 5px;
+	border: 2px solid rgba(255,255,255,0.);
+	margin: 10px;
+	padding: 5px;
+	background-color: rgba(90,0,0,0.4);
+}
+ul{
+display: block;
+margin-left: -40px;
+}
+.menu{
+	position: absolute;
+	display: none;
+	border: 2px solid rgba(255,255,255,0.9);
+	background-color: rgba(170,0,0,0.4);
+	border-radius: 5px;
+	}
+.show{
+	display: block;
+}
+.image {
+	width: 500px;
+	display: block;
+	margin: auto;
+	box-shadow: 1px 1px 10px 1px rgba(255,255,255,1.0);
+	border: 2px solid rgba(255,255,255,1.0);
+		border-radius: 5px;
+		margin-bottom: 5%;
+}
+.active {
+	border-radius: 5px;
+}
+.used{
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 5px;
+}
+
+.container{
+		background-color: rgba(255,80,80,0.4);
+		padding: 20px;
+		margin-left: 100px;
+		margin-right: 100px;
+		margin-top: 25px;
+		border-radius: 5px;
+}
+.dropbtn {
+	float: left;
+	font-family: Comic Sans MS;
+	font-size: 24px;
+	cursor: pointer;
+	margin-left: 15%;
+	width: 15%;
+}
+
+#aang {
+	float: right;
+	border-radius: 5px;
+	margin-right: 15%;
+	width: 15%;
+	cursor: pointer;
+}
+.header{
+
+			background-color: rgba(255,0,0,0.4);
+		padding: 5%;
+			border-radius: 5px;
+}
+
+.footer{
+			background-color: rgba(255,0,0,0.4);
+		padding: 5%;
+			border-radius: 5px;
+}

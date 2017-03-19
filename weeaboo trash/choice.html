@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image" href="img/ang.png">
+		<link rel="stylesheet" type="text/css" href="choicestyle.css" >
+		<title>Meme Central</title>
+	</head>
+	
+<div class="container">
+<div class="header">
+	<body onload="setVolume()">
+		<div class="header">
+					<div class="dropdown">
+						<img class="dropbtn" id="dropbutton" onclick="clicked()" src="img/menubutton.png" ></img>
+							<div id="myDropdown"class="menu">
+								<ul> 
+									<li><a href="../dank memes/memes.html">main memes</a>
+									<li><a href="../nbreakfast/reeses puffs.html">reeses puff</a>
+									<li class="active">weeaboo trash	
+									<li><a href="../minecraft/minecraft.html">minecraft</a>	
+									<li><a href="../sonic/sanic.html">sanic</a> 
+									<li><a href="../russia/cyka blyat.html">cyka blyat</a>
+								</ul>
+							</div> <!--close menu-->
+					</div>
+				<img src="img/ang.png"  id="aang" onclick="mute()">
+				<a href="../index.html"  ><h1>meme central</h1></a>
+				<h2>choose a weeb lifestyle</h2>
+		</div>
+		<audio preload="auto" autoplay loop id="weebaudio"> 
+			<source src="music/moe shop - you look so good.mp3" type="audio/mp3">
+		</audio>
+	<h3>naruto's dad is the hokage</h3>					
+	<a href="naruto/naruto.html"><img  src="img/naruto.png" title="naruto memes" class="image"/></a>
+	<br><br><br><br>
+	<h3>weeb memes are pretty awkward sometimes</h3>	
+	<a href="weeb/weeb.html"><img  src="img/hentai desu.png" title="naruto memes" class="image"/></a>
+	<br><br><br><br>
+	<h3>everything out of context</h3>	
+	<a href="out of context/it was me, dio.html"><img  src="img/impure thoughts.png" title="naruto memes" class="image"/></a>
+	<div class="footer">
+		<p>created by penut
+	</div>
+		</body>
+	</div>
+</html>
+
+<script>
+function clicked() {
+	document.getElementById("myDropdown").classList.toggle("show");
+	document.getElementById("dropbutton").classList.toggle("active");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+		document.getElementById("dropbutton").classList.toggle("active");
+      }
+    }
+  }
+}
+var x = document.getElementById('weebaudio');
+
+function setVolume() {
+x.volume = 0.2;
+}
+
+function mute() {
+    if (x.volume == 0.0) {
+        x.volume = 0.2;
+		document.getElementById("quiet").classList.toggle("active");
+    } else {
+        x.volume = 0.0;
+		document.getElementById("quiet").classList.toggle("active");
+    }
+}
+
+</script>

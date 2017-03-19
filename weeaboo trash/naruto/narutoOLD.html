@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image" href="images/ang.png">
+		<link rel="stylesheet" type="text/css" href="narutostyle.css" >
+		<title>Meme Central</title>
+	</head>
+	
+	<body onload="setVolume()">
+		<div class="header">
+					<div class="dropdown">
+						<img class="dropbtn" id="dropbutton" onclick="clicked()" src="images/menubutton.png" width="80" height="80" ></img>
+							<div id="myDropdown"class="menu">
+								<ul> 
+									<li><a href="index.html">main memes</a>
+									<li><a href=".html">reeses puff</a>
+									<li class="active">weeaboo trash
+									<li><a href=".html">minecraft</a>	
+									<li><a href=".html">sanic</a> 
+									<li><a href=".html">cyka blyat</a>
+								</ul>
+							</div> <!--close menu-->
+					</div>
+				<img src="images/ang.png"  id="nutt" onclick="mute()"><a href="index.html">
+				<h1>Meme Central</a></h1>
+				<h2>El Weeb Supreme</h2>
+		</div>
+				<div class="container">
+		
+		<audio preload="auto" autoplay loop id="weebaudio"> 
+			<source src="sounds/music/naruto ost - strong and strike.mp3" type="audio/mp3">
+		</audio>
+			
+			<div class="body">
+				<a href="weeaboo trash.html"><p>regular anime memes here</a>
+				<h3>naruto's dad is the hokage</h3>
+				<img  class="image" src="images/weeb/naruto/bout to gibe da blo.png">
+				<img  class="image" src="images/weeb/naruto/sasuke 1.png">
+				<img  class="image" src="images/weeb/naruto/AAAAAAAAAAAAAAAA.png">
+				<img  class="image" src="images/weeb/naruto/pein.gif">
+				<img  class="image" src="images/weeb/naruto/pein0.gif">
+				<img  class="image" src="images/weeb/naruto/pein2.png">
+				<img  class="image" src="images/weeb/naruto/pein3.png">
+				<img  class="image" src="images/weeb/naruto/pein4.png">
+				<img  class="image" src="images/weeb/naruto/pein5.png">
+				<img  class="image" src="images/weeb/naruto/pein6.png">
+				<img  class="image" src="images/weeb/naruto/pein7.png">
+				<img  class="image" src="images/weeb/naruto/pein8.png">
+				<img  class="image" src="images/weeb/naruto/pein9.png">
+				<img  class="image" src="images/weeb/naruto/autistic naruto.png">
+				<img  class="image" src="images/weeb/naruto/inhale.png">
+				<img  class="image" src="images/weeb/naruto/sasusight.png">
+				<img  class="image" src="images/weeb/naruto/sasukepunch.png">
+				<img  class="image" src="images/weeb/naruto/sasukepunch2.png">
+				<img  class="image" src="images/weeb/naruto/maito gai.png">
+				<img  class="image" src="images/weeb/naruto/maito gai 2.png">
+				<img  class="image" src="images/weeb/naruto/sasuke2.png">
+				
+			</div> <!--close body-->
+		</div> <!--close container-->
+						<div class="footer">
+							<p>created by penut
+						</div> <!--close footer-->
+	</body>
+</html>
+
+<script>
+function clicked() {
+	document.getElementById("myDropdown").classList.toggle("show");
+	document.getElementById("dropbutton").classList.toggle("active");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+		document.getElementById("dropbutton").classList.toggle("active");
+      }
+    }
+  }
+}
+var x = document.getElementById('weebaudio');
+
+function setVolume() {
+x.volume = 0.2;
+}
+
+function mute() {
+    if (x.volume == 0.0) {
+        x.volume = 0.2;
+		document.getElementById("nutt").classList.toggle("active");
+    } else {
+        x.volume = 0.0;
+		document.getElementById("nutt").classList.toggle("active");
+    }
+}
+
+</script>
+
+
+
+
+
+
+
+
+

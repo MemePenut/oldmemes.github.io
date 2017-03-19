@@ -1,0 +1,14 @@
+#jojoref{
+width: 75%;
+}
+h1 {
+text-align: center;
+}
+a {
+color: rgba(235,235,235,1.0);
+float: right;
+}
+html{
+background: linear-gradient(to bottom right, rgba(245,245,245,0.9), rgba(255,255,255,0.6));
+font-family: "comic sans ms";
+}

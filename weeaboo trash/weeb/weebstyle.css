@@ -1,0 +1,132 @@
+@font-face{
+	font-family: "naruto font"; 
+	src: url('assets/njnaruto.ttf') format("truetype");
+}
+@font-face{
+	font-family: "anime font"; 
+	src: url('assets/animeace.ttf') format("truetype");
+}
+html {
+	font-family: "anime font", sans-serif;
+	background: url('img/background.png');
+	background-color: rgba(0,0,0,1);
+	background-position: 50%;
+	color: rgba(255,255,255,1.0);
+	max-width: 695px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 56px;
+	text-align: center;
+	}
+
+h2{
+	margin-bottom: 15px;
+	text-align: center;
+	margin-left: -50px;
+	}
+
+a:link, a:visited {
+	color: rgba(255,255,255,1.0);
+	font-weight: bold;
+}
+ul{
+	display: block;
+	margin-left: 30px;
+}
+li{
+	list-style-type: none;
+	text-align: center;
+	background: rgba(100,70,165,0.5);
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	margin: 5%;
+	margin-left: -20%;
+	padding: 5%;
+	padding-left: -80%;
+}
+.active {
+	filter: grayscale(50%) ;
+	background: rgba(255,255,255,0.2);
+	box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.5);
+	border-radius: 5px;
+}
+
+.menu{
+	position: absolute;
+	display: none;
+	margin-left: 225px;
+	padding-right: 1.5%;
+	background: rgba(100,70,165,0.9);
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.show{
+	display: block;
+}
+
+.header{
+	background: rgba(100,25,150,0.9);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	padding: 5%;
+	margin-left: -20%;
+	margin-right: -20%;
+	border-radius: 5px;
+}
+
+.dropbtn {
+	float: left;
+	cursor: pointer;
+	width: 15%;
+	height: 15%;
+		border-radius: 5px;
+	}
+
+#aang {
+	float: right;
+	border-radius: 5px;
+	width: 15%;
+	cursor: pointer;
+}
+
+
+.image {
+	box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.5);
+	border-radius: 5px;
+	max-width: 695px;
+	min-width: 695px;
+	margin-bottom: 10px;
+	height: 450px;
+	cursor: pointer;
+}
+
+.container{
+	background: rgba(50,0,75,0.9);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	padding: 1%;
+	margin-top: 5%;
+	margin-left: -20%;
+	margin-right: -20%;
+	border-radius: 5px;
+	text-align: center;
+
+}
+p{
+text-align: center;
+}
+
+.footer{
+	background: rgba(135, 110, 190, 0.9);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	padding: 1%;
+	margin-top: 5%;
+	margin-left: -20%;
+	margin-right: -20%;
+		border-radius: 5px;
+		text-align: center;
+}

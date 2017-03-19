@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image" href="img/ang.png">
+		<link rel="stylesheet" type="text/css" href="indexstyle.css" >
+		<title>meme central</title>
+	</head>
+	
+	<body onload="setVolume()">
+	<div class="page">
+			<div class="header">
+						<div class="dropdown">
+						<img class="dropbtn" id="dropbutton" onclick="clicked()" src="img/menubutton.png" width="150" height="150" ></img>
+							<div id="myDropdown"class="menu">
+								<ul> 
+									<li><a href="dank memes/memes.html">main memes</a>
+									<li><a href="nbreakfast/reeses puffs.html">reeses puff</a>
+									<li><a href="weeaboo trash/choice.html">weeaboo trash</a>	
+									<li><a href="minecraft/minecraft.html">minecraft</a>	
+									<li><a href="sonic/sanic.html">sanic</a> 
+									<li><a href="russia/cyka blyat.html">cyka blyat</a>
+								</ul>
+							</div> <!--close menu-->
+					</div>
+				<img src="img/ang.png"  id="aang" onclick="mute()">
+				<a href="index.html"  ><h1>meme central</h1></a>
+				<h2>el weeb supreme</h2>
+				<h3>click aang to mute the audio</h3>
+		</div>
+				<div class="container">
+		<audio preload="auto" autoplay loop id="memeaudio"> 
+			<source src="sounds/music/a-ha - take on me.mp3" type="audio/mp3">
+		</audio>
+			<div class="body">
+				<h3>the home for a couple memes i have found/collected.</h3>
+				<p>i have gathered and accumulated  some memes and i wish to share them
+				<p>should you click on one of the listed items, you shall be taken from the current page
+				<p>to the page you have clicked on
+				<p>for i am a fan of memes
+				<p>this page, however, contains no memes whatsoever.
+			</div> <!--close body-->
+		</div> <!--close container-->
+		<div class="container">
+				<h3>i lied there is one or maybe two meme</h3>
+				<p>The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed starts slowly, but gets faster each minute after you hear this signal. [beep] A single lap should be completed each time you hear this sound. [ding] Remember to run in a straight line, and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. The test will begin on the word start. On your mark, get ready, start.
+				<br>NUT
+		</div> <!--close nutt-->
+						<div class="footer">
+							<p>created by penut
+						</div> <!--close footer-->
+						</div>
+	</body>
+</html>
+
+<script>
+function clicked() {
+	document.getElementById("myDropdown").classList.toggle("show");
+	document.getElementById("dropbutton").classList.toggle("active");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+		document.getElementById("dropbutton").classList.toggle("active");
+      }
+    }
+  }
+}
+var x = document.getElementById('memeaudio');
+
+function setVolume() {
+x.volume = 0.2;
+}
+
+function mute() {
+    if (x.volume == 0.0) {
+        x.volume = 0.2;
+		document.getElementById("aang").classList.toggle("active");
+    } else {
+        x.volume = 0.0;
+		document.getElementById("aang").classList.toggle("active");
+    }
+}
+
+</script>
+
+
+
+
+
+
+
+
+

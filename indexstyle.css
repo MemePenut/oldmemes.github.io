@@ -1,0 +1,129 @@
+@font-face{
+	font-family: "naruto font"; 
+	src: url('assets/njnaruto.ttf') format("truetype");
+}
+@font-face{
+	font-family: "anime font"; 
+	src: url('assets/animeace.ttf') format("truetype");
+}
+@keyframes animatedBackground {
+	from { background-position: 0% 50%; }
+	to { background-position: 600px 50%; }
+}
+
+html {
+	font-family: "comic sans ms", sans-serif;
+	color: rgba(255,255,255,1.0);
+	text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+	max-width: 695px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url('img/background.gif');
+	background-repeat: repeat-x;
+	animation: animatedBackground 25s linear infinite;
+}
+
+h1 {
+	margin: 20px -20% 20px -20%;
+	font-size: 56px;
+	text-align: center;
+}
+h2{
+	margin-bottom: 15px;
+	text-align: center;
+	margin-left: -50px;
+	font-size: 30px;
+}
+h3{
+	font-size: 24px;
+}
+
+a {
+	color: rgba(255,255,255,1.0);
+	font-weight: bold;
+}
+.active {
+	filter: grayscale(75%);
+	box-shadow: 1px 1px 10px 2px rgba(255,255,255,1.0);
+}
+li{
+	list-style-type: none;
+	text-align: center;
+	background: linear-gradient(to bottom right, rgba(255,0,145,0.9), rgba(245,0,110,0.6));
+	border: 5px solid rgba(255,255,255,0.8);
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+	margin: 5% -5%;
+	padding: 10px;
+}
+ul{
+	display: block;
+	margin-left: -40px;
+}
+.menu{
+	position: absolute;
+	background: linear-gradient(to bottom right, rgba(0,110,220,0.8), rgba(90,170,255,0.8));
+	display: none;
+	border: 5px solid rgba(255,255,255,0.8);
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+	margin-left: 150px;
+	padding: 5px 25px;
+}
+.show{
+	display: block;
+}
+
+.dropbtn {
+	float: left;
+	background: linear-gradient(to bottom right, rgba(255,0,145,0.9), rgba(245,0,110,0.6));
+	cursor: pointer;
+	border: 5px solid rgba(255,255,255,0.8);
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+	height: 15%;
+	width: 15%;
+	padding: 10px;
+}
+
+#aang {
+	float: right;
+	background: linear-gradient(to bottom right, rgba(255,0,145,0.9), rgba(245,0,110,0.6));
+	cursor: pointer;
+	border: 5px solid rgba(255,255,255,0.8);
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+	height: 15%;
+	width: 15%;
+	padding: 10px;
+}
+.container{
+	background: linear-gradient(to bottom right, rgba(0,110,220,0.6), rgba(90,170,255,0.6));
+	margin: 20px -20% 20px -20%;
+	padding: 0% 50px;
+	border: 5px solid rgba(255,255,255,0.8);
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+.header{
+	background: linear-gradient(to bottom right, rgba(0,15,50,0.7), rgba(0,70,200,0.7));
+	margin: 20px -20% 20px -20%;
+	padding: 20px;
+	border: 5px solid rgba(255,255,255,0.8);
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+.footer{
+	background: linear-gradient(to bottom right, rgba(0,15,50,0.7), rgba(0,70,200,0.7));
+	margin: 20px -20% 20px -20%;
+	padding: 0;
+	border: 5px solid rgba(255,255,255,0.8);
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+.page{
+position: relative;
+}

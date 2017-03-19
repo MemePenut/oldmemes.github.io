@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image" href="img/ang.png">
+		<link rel="stylesheet" type="text/css" href="weebstyle.css" >
+		<title>Meme Central</title>
+	</head>
+	
+	<body onload="setVolume()">
+		<div class="header">
+					<div class="dropdown">
+						<img class="dropbtn" id="dropbutton" onclick="clicked()" src="img/menubutton.png" width="80" height="80" ></img>
+							<div id="myDropdown"class="menu">
+								<ul> 
+									<li><a href="../../dank memes/memes.html">main memes</a>
+									<li><a href="../../nbreakfast/reeses puffs.html">reeses puff</a>
+									<li><a href="../choice.html">weeaboo trash</a>	
+									<li><a href="../../minecraft/minecraft.html">minecraft</a>	
+									<li><a href="../../sonic/sanic.html">sanic</a> 
+									<li><a href="../../russia/cyka blyat.html">cyka blyat</a>
+								</ul>
+							</div> <!--close menu-->
+					</div>
+				<img src="img/ang.png"  id="aang" onclick="mute()">
+				<a href="../../index.html"  ><h1>meme central</h1></a>
+				<h2>weeb meme ga kimochii</h2>
+		</div>
+				<div class="container">
+		
+		<audio preload="auto" autoplay loop id="weebaudio"> 
+			<source src="sounds/music/μ - snow halation.mp3" type="audio/mp3">
+		</audio>
+			
+			<div class="body">
+				<h3>some fricking anime memes you hecking nerd</h3>
+					<img id='honkimg' class='image' onclick="honk();" src="img/dimpul.png" />
+			</div> <!--close body-->
+		</div> <!--close container-->
+						<div class="footer">
+							<p>created by penut
+						</div> <!--close footer-->
+	</body>
+</html>
+
+<script>
+function clicked() {
+	document.getElementById("myDropdown").classList.toggle("show");
+	document.getElementById("dropbutton").classList.toggle("active");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+		document.getElementById("dropbutton").classList.toggle("active");
+      }
+    }
+  }
+}
+var x = document.getElementById('weebaudio');
+
+function setVolume() {
+x.volume = 0.2;
+}
+
+function mute() {
+    if (x.volume == 0.0) {
+        x.volume = 0.2;
+		document.getElementById("aang").classList.toggle("active");
+    } else {
+        x.volume = 0.0;
+		document.getElementById("aang").classList.toggle("active");
+    }
+}
+
+
+var y = 0;
+var imagesArray = ["img/dimpul.png","img/eh.png","img/forgive this old lady.png","img/go fatsr.png","img/i cant weede.png","img/im not okay.png","img/its the middle of the night but his room is lit.png","img/mobbu.png","img/moo means moo.png","img/my poor waifu.gif","img/nandesuka.png","img/nani.png","img/oraoraoraoraora.gif","img/seen ma head m8.png","img/stremee speede.png","img/sweet memes together.png","img/what.png","img/whats the number for 911.png","img/yamete.png"];
+
+function honk() {
+    if (y < imagesArray.length - 1) {
+        y++;
+    }
+    else {
+        y = 0;
+    }
+
+    document.getElementById("honkimg").setAttribute("src", "");
+    document.getElementById("honkimg").setAttribute("src", imagesArray[y]);
+}
+</script>
+
+</script>
+
+
+
+
+
+
+
+
+
